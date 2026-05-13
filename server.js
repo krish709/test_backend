@@ -3,13 +3,13 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-const sequelize = require("../test_backend/src/config/db");
+const sequelize = require("./src/config/db");
 
-require("../test_backend/src/models/User");
+require("./src/models/User");
 
-const userRoutes = require("../test_backend/src/routes/userRoutes");
+const userRoutes = require("./src/routes/userRoutes");
 
-const errorHandler = require("../test_backend/src/middleware/errorMiddleware");
+const errorHandler = require("./src/middleware/errorMiddleware");
 
 const app = express();
 
